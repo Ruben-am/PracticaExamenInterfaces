@@ -24,6 +24,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
@@ -31,6 +36,7 @@ android {
 }
 
 dependencies {
+    // DEFAULT IMPLEMENTATIONS
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
@@ -38,4 +44,9 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
+    // OTHER IMPLEMENTATIONS
+    implementation(libs.lottie)
+    implementation(libs.swiperefreshlayout)
+    implementation(libs.glide)
 }
