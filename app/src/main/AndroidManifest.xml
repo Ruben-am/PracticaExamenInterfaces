@@ -15,7 +15,9 @@
         android:theme="@style/Theme.PracticaExamenInterfaces">
         <activity
             android:name=".SingUpActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.PracticaExamenInterfaces.ActionBar"
+            android:parentActivityName=".LoginActivity"/>
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
