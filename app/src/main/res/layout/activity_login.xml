@@ -101,4 +101,17 @@
         app:layout_constraintEnd_toEndOf="@id/gd_login_end"
         app:layout_constraintStart_toStartOf="@id/gd_login_start"
         app:layout_constraintTop_toBottomOf="@id/btn_login_singup" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_animation"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+
+        app:lottie_rawRes="@raw/reindeer"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
