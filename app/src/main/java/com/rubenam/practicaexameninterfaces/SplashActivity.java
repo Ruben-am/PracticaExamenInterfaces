@@ -3,6 +3,8 @@ package com.rubenam.practicaexameninterfaces;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +24,9 @@ public class SplashActivity extends AppCompatActivity {
 
         binding = ActivitySplashBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.rotation);
+        binding.ivSplashLogo.startAnimation(myAnim);
 
         openMain();
     }
