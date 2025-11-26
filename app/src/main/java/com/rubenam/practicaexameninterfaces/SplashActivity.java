@@ -33,7 +33,7 @@ public class SplashActivity extends AppCompatActivity {
         binding.ivSplashLogo.startAnimation(myAnim);
 
         Glide.with(this)
-                .load("https://wallpapers.com/images/hd/dark-ocean-938-x-1668-wallpaper-9q07z71hrfl8k5ty.jpg")
+                .load("https://i.pinimg.com/736x/5a/1b/11/5a1b116edc2c526aa67132b35a826390.jpg")
                 .centerCrop()
                 .into(binding.ivSplashBackimage);
 
